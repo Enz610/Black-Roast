@@ -213,3 +213,62 @@ section > p {
 #contato li {
     margin-bottom: 8px;
 }
+
+@media (max-width: 950px) {
+    .container-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    
+    .banner {
+        padding: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        padding: 18px 14px;
+    }
+
+    .teste {
+        font-size: 30px;
+    }
+
+    nav {
+        gap: 4px;
+    }
+
+    nav a {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .banner {
+        padding: 24px;
+        min-height: 380px;
+        background-position: center;
+    }
+
+    .banner h1 {
+        font-size: 34px;
+    }
+
+    .container-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 220px;
+    }
+
+    section > h2 {
+        font-size: 26px;
+    }
+
+    hr {
+        margin: 30px 0;
+    }
+}
+
+.banner .descriçao {
+    color: #F5F1E8;
+}
